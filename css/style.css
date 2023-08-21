@@ -34,6 +34,7 @@ MAIN
 
 .body_container--light{
     background-color: #F3F6F0;
+    width: 100vw;
 }
 
 a{
@@ -883,35 +884,67 @@ p{
 NAV
 */
 
-.navbar--light{
-    height: 10rem;
+header{
+    width: 100vw;
+}
+
+.nav_bootstrap{
     position: fixed;
     z-index: 1;
     background-color: #F3F6F0;
+    width: 100vw;
+    height: 6rem;
+
 }
 
-
-.dark{
+.dark_bg{
     background-color: #2C3238;
 }
 
-.navbar-nav{
-    padding-top: 2rem;;
+.light_bg{
+    background-color: #F3F6F0;
 }
+
+.navbar-nav{
+    padding-top: 2rem;
+    width: 100vw;
+}
+
+.btn-burger{
+    margin-top: 0;
+}
+
+.btn_logo{
+    margin-top: 0;
+    padding-top: 5rem;
+    position: relative;
+}
+
+@media screen and (max-width: 990px) {
+    .btn_logo{
+        padding-top: 1rem;
+    }
+    .nav_bootstrap{
+        height: 10rem;
+    }
+}
+
+
 
 .nav-link{
     list-style-type: none;  
 }
 
+
 .li--light{ 
     font-family: "myFirstFont-bold";
     font-size: 4rem;
-    line-height: 8rem;
+    line-height: 5rem;
     letter-spacing: 0.5rem;
     text-decoration: none;
     -webkit-text-stroke: 0.1rem #2C3238;
     color: #F3F6F0;
-    padding-right: 3rem;
+    padding-top: 8rem;
 }
 
 .li--light:hover{ 
@@ -922,28 +955,35 @@ NAV
 .li--light--active{ 
     font-family: "myFirstFont-bold";
     font-size: 4rem;
-    line-height: 8rem;
+    line-height: 5rem;
     letter-spacing: 0.5rem;
     text-decoration: none;
     color:  #2C3238;
+    padding-top: 8rem;
 }
 
 .li--dark{ 
     font-family: "myFirstFont-bold";
     font-size: 4rem;
-    line-height: 8rem;
+    line-height: 5rem;
     letter-spacing: 0.5rem;
     text-decoration: none;
     -webkit-text-stroke: 0.1rem #f3f6f0;
     color: transparent;
+    padding-top: 8rem;
+}
+
+.li--dark--active{ 
+    font-family: "myFirstFont-bold";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+    color:  #f3f6f0;
+    padding-top: 8rem;
 }
 
 .li--dark:hover{ 
-    font-family: "myFirstFont-bold";
-    font-size: 4rem;
-    line-height: 8rem;
-    letter-spacing: 0.5rem;
-    text-decoration: none;
     color:  #f3f6f0;
 }
 

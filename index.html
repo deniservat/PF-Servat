@@ -9,19 +9,27 @@
 </head>
 
 <body>
-
-  <div class="body_container_index" id="grid">
-
-    <header id="header">
-      <nav class="header_nav--dark">
-        <ul class="header_ul">
-          <li><img class="header_nav_logo--dark" src="./img/logo-circle.svg" width="80px"></li>
-          <li><a class="header_li--dark--active" href="./index.html">HOME</a></li>
-          <li><a class="header_li--dark--default" href="./pages/about.html">ABOUT</a></li>
-          <li><a class="header_li--dark--default" href="./pages/work.html">WORK</a></li>
-          <li><a class="header_li--dark--default" href="./pages/careers.html">CAREERS</a></li>
-          <li><a class="header_li--dark--default" href="./pages/contact.html">CONTACT</a></li>
-        </ul>
+  <div class="body_container--dark">
+    <header class="dark_bg">
+      <nav class="navbar navbar-expand-lg nav_bootstrap dark_bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img class="btn_logo" src="./img/logo-circle-dark.svg" width="80px">
+          </a>
+          <button class="navbar-toggler shadow-none border-0 btn-burger" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./img/icn-burger-light.svg" width="40px">
+          </button>
+          </button>
+          <div class="collapse navbar-collapse text-center dark_bg pb-5" id="menu">
+            <ul class="navbar-nav nav-fill w-100">
+              <li class="nav-item li_bootstrap"><a class="nav-link li--dark--active" href="../index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link li--dark" href="about.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link li--dark" href="work.html">WORK</a></li>
+              <li class="nav-item"><a class="nav-link li--dark" href="careers.html">CAREERS</a></li>
+              <li class="nav-item"><a class="nav-link li--dark" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
