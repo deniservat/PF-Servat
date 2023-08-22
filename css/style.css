@@ -249,65 +249,28 @@ a{
 
 /* WORK */
 
-.work_main_container{
-    width: 100%;
-    overflow: hidden;
-    padding-top: 12rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.work_main_heading{
+    margin-bottom: 7rem;
 }
 
+.work_main_img_50{
+    width: 100%;
+    margin-bottom: 2rem;
+}
 
-.work_main_section1, .work_main_section2{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;   
-    align-items: flex-start;
-    
+.work_main_img_25{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.work_main_container{
+    width: 90%;
+    overflow: hidden;
+    padding-top: 12rem;
 }
 
 .work_main_section1{
     margin-top: 10rem;
-}
-
-.work_main_section1_col1{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 2rem;
-}
-
-.work_main_section2_col1{
-    margin-right: 2rem;
-}
-
-.work_main_section2_col2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.work_main_section1_col2,
-.work_main_section2_col1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-
-.work_main_section1_col2_col1,
-.work_main_section1_col2_col2,
-.work_main_section2_col1_col1,
-.work_main_section2_col1_col2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
 }
 
 .work_main_card_project{
@@ -318,30 +281,31 @@ a{
     padding: 0 1rem;
 }
 
-.work_main_heading{
-    margin-bottom: 7rem;
-}
-
-.work_main_img_25{
-    margin-bottom: 2rem;
-}
-
 .work_main_section3{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 90%;
     padding: 10rem 0;
 }
 
-.work_main_section3_col2{
+.work_main_card_project_latest{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    padding-bottom: 10rem;
+
 }
 
+@media only screen and (max-width: 1200px) {
+
+    .work_main_section3_col1{
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    .work_main_section3_col1{
+        padding-bottom: 5rem;
+    }
+}
 
 /*CAREERS*/
 
@@ -957,7 +921,25 @@ header{
     color:  #f3f6f0;
 }
 
-
+@media only screen and (max-width: 990px) {
+    .li--light{ 
+        padding-top: 4rem;
+    }
+    
+    .li--light--active{ 
+        padding-top: 4rem;
+    }
+    
+    .li--dark{ 
+        padding-top: 4rem;
+    }
+    
+    .li--dark--active{ 
+        padding-top: 4rem;
+    }
+   
+   
+}
 
 
 /*
