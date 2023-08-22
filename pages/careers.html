@@ -10,9 +10,9 @@
 
 <body>
   <div class="body_container--dark">
-    <header class="dark_bg">
-      <nav class="navbar navbar-expand-lg nav_bootstrap dark_bg">
-        <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg nav_bootstrap">
+        <div class="container-fluid dark_bg">
           <a class="navbar-brand" href="">
             <img class="btn_logo" src="../img/logo-circle-dark.svg" width="80px">
           </a>
@@ -33,51 +33,54 @@
       </nav>
     </header>
 
-    <main id="main" class="careers_main_container">
+    <main class="container careers_main_container">
 
-      <section class="careers_main_section1">
-        <article class="careers_main_section1_col1">
+      <section class="row careers_main_container_text">
+        <article class="col-md-12 col-lg-6 careers_main_container_text">
           <h1 class="h5_careers">CAREERS</h1>
           <h2 class="h3_careers">WANT TO MAKE DIFFERENT HAPPEN?</h2>
           <div class="btn--large"><a href="" class="p">Get in touch</a></div>
         </article>
-        <article class="careers_main_section1_col2">
-          <img src="../img/CAREERS-illustration-584x584.svg">
+        <article class="col-md-12 col-lg-6 careers_main_container_illustration">
+          <img src="../img/CAREERS-illustration-584x584.png" class="careers_illustration">
         </article>
       </section>
 
-      <section class="careers_main_section2">
+      <section class="row careers_main_section2">
 
-        <article class="careers_main_section2_row1">
+        <article class="col-lg-12 col-xl-3 careers_main_section2_col1">
           <h3 class="h5_about light_text">OPEN<br>POSITIONS</h3>
           <img src="../img/subheadings_arrow_light.svg" width="220px">
         </article>
 
-        <acticle class="container">
+        <acticle class="col-lg-12 col-xl-9">
           <div class="careers_main_section2_row2 accordion" id="accordionExample">
 
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button p_work light_text open" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Mid-Weight Strategist (Shopper/Activation focus)
+              <h2 class="accordion-header open">
+                <button class="accordion-button p_work light_text" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Mid-Weight Strategist 
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show p_careers" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapsed p_careers" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   We’re looking for a Mid-weight Strategist to join the fast-growing strategy team. You’ll be working on shopper/trade/activation focused projects and clients. The work will focus on creative strategies for campaigns & activations that drive conversion ontrade [in bars/pubs and restaurants] and off trade [in the supermarket].
+                </div>
+                <div class="btn--secondary"><a href="" class="p_btn_secondary">Apply now</a></div>
               </div>
             </div>
 
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed p_work light_text" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Freelance MW Designer for 3 month FTC 
+                  Freelance MW Designer
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse p_careers" data-bs-parent="#accordionExample">
+              <div id="collapseTwo" class="collapse p_careers" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   Starting in September, 2 days onsite London, 3 remote. Must haves: approx 2-6yrs experience reputable creative agency, integrated experience, roficient in Sketch, Adobe XD & Figma, comfortable creating look/feel for decks + working across print/digital/brand.
                 </div>
+                <div class="btn--secondary"><a href="" class="p_btn_secondary">Apply now</a></div>
               </div>
             </div>
 
@@ -87,10 +90,11 @@
                   UI/UX Web Designer
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse p_careers" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="collapse p_careers" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                 We are seeking a UI/UX Web Designer to work closely with our CTO, the role will be split with an 80% bias towards design and UI/UX in Figma or similar on the design and build of websites. The remaining 20% will be predominantly focused on developing and implementing new digital initiatives, web building and leading us into a new digital design arena. 
                 </div>
+                <div class="btn--secondary"><a href="" class="p_btn_secondary">Apply now</a></div>
               </div>
             </div>
 
@@ -98,7 +102,7 @@
         </article>
       </section>
 
-      <section class="careers_main_section3">
+      <section class="row careers_main_section3">
         <div class="careers_main_section3_container">
           <h4 class="h4_about light_text left_align">Noti is proud to</h4>
           <h4 class="h4_about light_text">have <span class = "span_underline">100%</span> gender pay</h4>
@@ -108,22 +112,21 @@
 
     </main>
   
-    <footer id="footer">
-      <div class="footer_column_1">
-        <img class="footer_logo" src="../img/logo.svg">
-      </div>
-  
-      <div class="footer_columns_frame">
-        <div class="footer_column_2">
+    <footer class="container-fluid">
+      <section class="row">
+
+        <article class="col-lg-5 col-xs-10">
+          <img class="footer_logo" src="../img/logo.svg">
+        </article>
+        <article class="col-lg-2 col-md-6 col-xs-10 footer_column2">
           <h3 class="h6-footer">Stay connected</h3>
           <div class="footer_socialicons">
             <a href=""><img class="footer_icn" src="../img/icn-ig.svg" width="40px"></a>
             <a href=""><img class="footer_icn" src="../img/icn-tw.svg" width="40px"></a>
             <a href=""><img class="footer_icn" src="../img/icn-linkedin.svg" width="40px"></a>       
           </div>
-        </div>
-          
-        <div class="footer_column_3">
+        </article>
+        <article class="col-lg-3 col-md-6 col-xs-10 footer_column3">
           <h3 class="h6-footer">Contact us</h3>
           <div class="footer_contact_frame">
             <img class="footer_icn" src="../img/icn-location.svg" width="40px" height="40px">
@@ -137,9 +140,9 @@
             <img class="footer_icn" src="../img/icn-mail.svg" width="40px" height="40px">
             <p class="p-footer">info@noti.com</p>
           </div>
-        </div>
-      </div>
-    
+        </article>
+  
+      </section>
     </footer>
 
   </div>
