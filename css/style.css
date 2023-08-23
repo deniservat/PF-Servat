@@ -293,6 +293,10 @@ a{
 
 }
 
+.arrow_down{
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
 
     .work_main_section3_col1{
@@ -304,6 +308,17 @@ a{
 
     .work_main_section3_col1{
         padding-bottom: 5rem;
+    }
+    .arrow_down{
+        display: inline;
+        padding-left: 2rem;
+    }
+    .arrow_side{
+        display: none;
+    }
+    .work_main_section3_col1{
+        display: flex;
+        flex-direction: row;
     }
 }
 
@@ -915,6 +930,10 @@ header{
     text-decoration: none;
     color:  #f3f6f0;
     padding-top: 8rem;
+}
+
+.li--dark--active:hover{ 
+    color:  #f3f6f0;
 }
 
 .li--dark:hover{ 
