@@ -25,23 +25,8 @@ html{
 
 /*
 ---------------------------------------------------------------------------------------------------------
-MAIN
+INDEX
 */
-
-.body_container--dark{
-    background-color: #2C3238;
-}
-
-.body_container--light{
-    background-color: #F3F6F0;
-    width: 100vw;
-}
-
-a{
-    text-decoration: none;
-}
-
-/* INDEX */
 
 .index_main_container{
     overflow: hidden;
@@ -89,9 +74,42 @@ a{
     background-color: #F3f6f0;
 }
 
+.h3_index{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: #F3F6F0;
+}
+
+.h6_index{
+    font-family: "mySecondFont";
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #F3f6f0;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.h2_index{
+    font-family: "myFirstFont-bold";
+    font-size: 10rem;
+    line-height: 11rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    color: #2C3238;
+    padding-bottom: 4rem;
+}
 
 
-/* ABOUT */
+/*
+---------------------------------------------------------------------------------------------------------
+ABOUT
+*/
+
 
 .about_main_container{
     width: 90%;
@@ -284,8 +302,7 @@ a{
     padding-left: 6rem;
 }
 
-
-
+/*ABOUT responsive*/
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
 
@@ -552,10 +569,10 @@ a{
     }
 }
 
-
-
-
-/* WORK */
+/*
+---------------------------------------------------------------------------------------------------------
+WORK
+*/
 
 .work_main_heading{
     margin-bottom: 7rem;
@@ -605,6 +622,35 @@ a{
     display: none;
 }
 
+.h2_work{
+    font-family: "myFirstFont-bold";
+    font-size: 10rem;
+    line-height: 11rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    color: #2C3238;
+}
+
+.p_work{
+    font-family: "mySecondFont";
+    font-size: 2rem;
+    line-height: 3rem;
+    color:  #2C3238;
+    text-align: left;
+    display: inline;
+}
+
+.h6_work{
+    font-family: "myFirstFont-alt";
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
+    color:  #2C3238;
+    text-align: left;
+}
+
+/*WORK responsive*/
+
 @media only screen and (max-width: 1200px) {
 
     .work_main_section3_col1{
@@ -630,7 +676,10 @@ a{
     }
 }
 
-/*CAREERS*/
+/*
+---------------------------------------------------------------------------------------------------------
+CAREERS
+*/
 
 .careers_main_container{
     padding-top: 20rem;
@@ -646,63 +695,11 @@ a{
     width: 90%;
 }
 
-
 .h4_careers_heading{
     font-family: "mySecondFont";
     font-size: 6rem;
     line-height: 10rem;
 }
-
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-
-    .arrow_down_2{
-        display: inline;
-        padding-left: 2rem;
-    }
-    .arrow_side_2{
-        display: none;
-    }
-    .about_main_section_heading{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 5rem;
-    }
-}
-
-@media only screen and (min-width: 1201px) {
-
-    .arrow_down_2{
-        display: none;
-    }
-    
-    .about_main_section_heading{
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 5rem;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-
-    .arrow_side_2{
-        display: none;
-        padding-left: 5rem;
-    }
-    
-    .about_main_section_heading{
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 5rem;
-    }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 990px) {
-
-  
-    
-}
-
-
 
 /*CAREERS accordion*/
 
@@ -770,6 +767,36 @@ a{
     padding-bottom: 20rem;
 }
 
+.h5_careers{
+    font-family: "myFirstFont-alt";
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+    color: #F3F6F0;
+    text-align: left;
+}
+
+.h3_careers{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    color: #F3F6F0;
+}
+
+.p_careers{
+    font-family: "mySecondFont";
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #F0F0F0;
+    text-align: left;
+}
+
+/*CAREERS responsive*/
 
 @media only screen and (max-width: 990px) {
 
@@ -785,10 +812,54 @@ a{
     }
 }
 
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+    .arrow_down_2{
+        display: inline;
+        padding-left: 2rem;
+    }
+    .arrow_side_2{
+        display: none;
+    }
+    .about_main_section_heading{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+
+    .arrow_down_2{
+        display: none;
+    }
+    
+    .about_main_section_heading{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .arrow_side_2{
+        display: none;
+        padding-left: 5rem;
+    }
+    
+    .about_main_section_heading{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
 
 
-
-/*CONTACT*/
+/*
+---------------------------------------------------------------------------------------------------------
+CONTACT
+*/
 
 .contact_main_container{
     padding-top: 20rem;
@@ -834,6 +905,32 @@ a{
 button{
     margin-top: 5rem;
     border: none;
+}
+
+.h4_contact{
+    font-family: "mySecondFont";
+    font-size: 6rem;
+    line-height: 7rem;
+}
+.h5_contact{
+    font-family: "myFirstFont-alt";
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+    color:  #2C3238;
+    text-align: left;
+}
+
+.h3_contact{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    color:  #2C3238;
 }
 
 /*CONTACT responsive*/
@@ -950,35 +1047,6 @@ BUTTONS
 TEXT STYLE
 */
 
-.h3_index{
-    font-family: "myFirstFont-alt";
-    font-size: 4rem;
-    line-height: 5rem;
-    letter-spacing: 1rem;
-    padding-bottom: 2rem;
-    margin-top: 5rem;
-    text-align: center;
-    color: #F3F6F0;
-}
-
-.h6_index{
-    font-family: "mySecondFont";
-    font-size: 2rem;
-    line-height: 3.5rem;
-    color: #F3f6f0;
-    margin-bottom: 3.5rem;
-    text-align: center;
-}
-
-.h2_index{
-    font-family: "myFirstFont-bold";
-    font-size: 10rem;
-    line-height: 11rem;
-    letter-spacing: 1rem;
-    text-align: left;
-    color: #2C3238;
-    padding-bottom: 4rem;
-}
 .p{
     font-family: "mySecondFont";
     font-size: 2rem;
@@ -992,9 +1060,6 @@ TEXT STYLE
     color:  #2C3238;
 }
 
-
-
-
 p{
     font-family: "mySecondFont";
     font-size: 1.8rem;
@@ -1004,116 +1069,6 @@ p{
     text-align: center;
 }
 
-
-.h2_work{
-    font-family: "myFirstFont-bold";
-    font-size: 10rem;
-    line-height: 11rem;
-    letter-spacing: 1rem;
-    text-align: left;
-    color: #2C3238;
-}
-
-.p_work{
-    font-family: "mySecondFont";
-    font-size: 2rem;
-    line-height: 3rem;
-    color:  #2C3238;
-    text-align: left;
-    display: inline;
-}
-
-.h6_work{
-    font-family: "myFirstFont-alt";
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.5rem;
-    color:  #2C3238;
-    text-align: left;
-}
-
-.h5_careers{
-    font-family: "myFirstFont-alt";
-    font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.5rem;
-    text-decoration: underline;
-    color: #F3F6F0;
-    text-align: left;
-}
-
-.h3_careers{
-    font-family: "myFirstFont-alt";
-    font-size: 4rem;
-    line-height: 5rem;
-    letter-spacing: 1rem;
-    text-align: left;
-    padding-bottom: 5rem;
-    margin-top: 5rem;
-    color: #F3F6F0;
-}
-
-.h4_contact{
-    font-family: "mySecondFont";
-    font-size: 6rem;
-    line-height: 7rem;
-}
-.h5_contact{
-    font-family: "myFirstFont-alt";
-    font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.5rem;
-    text-decoration: underline;
-    color:  #2C3238;
-    text-align: left;
-}
-
-.h3_contact{
-    font-family: "myFirstFont-alt";
-    font-size: 4rem;
-    line-height: 5rem;
-    letter-spacing: 1rem;
-    text-align: left;
-    padding-bottom: 5rem;
-    margin-top: 5rem;
-    color:  #2C3238;
-}
-
-.p_careers{
-    font-family: "mySecondFont";
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-    color: #F0F0F0;
-    text-align: left;
-}
-
-.dark_text{
-    color: #2C3238;
-}
-
-.light_text{
-    color: #F3F6F0;
-}
-
-.dark_bg{
-    background-color: #F3F6F0;
-}
-
-.left_align{
-    text-align: left;
-}
-
-.center_align{
-    text-align: center;
-}
-
-.position_absolute{
-    position: absolute;
-}
-
-.padding_left{
-    padding-left: 6rem;
-}
 /*
 ---------------------------------------------------------------------------------------------------------
 NAV
@@ -1131,14 +1086,6 @@ header{
     height: 6rem;
 }
 
-.dark_bg{
-    background-color: #2C3238;
-}
-
-.light_bg{
-    background-color: #F3F6F0;
-}
-
 .navbar-nav{
     padding-top: 2rem;
     width: 100vw;
@@ -1153,20 +1100,6 @@ header{
     padding-top: 5rem;
     position: relative;
 }
-
-@media screen and (max-width: 990px) {
-    .btn_logo{
-        padding-top: 1rem;
-    }
-    .nav_bootstrap{
-        height: 10rem;
-    }
-
-    .navbar-nav{
-        height: 90vh;
-    }
-}
-
 
 .nav-link{
     list-style-type: none;  
@@ -1227,6 +1160,8 @@ header{
     color:  #f3f6f0;
 }
 
+/*NAV responsive*/ 
+
 @media only screen and (max-width: 990px) {
     .li--light{ 
         padding-top: 4rem;
@@ -1243,8 +1178,19 @@ header{
     .li--dark--active{ 
         padding-top: 4rem;
     }
-   
-   
+}
+
+@media screen and (max-width: 990px) {
+    .btn_logo{
+        padding-top: 1rem;
+    }
+    .nav_bootstrap{
+        height: 10rem;
+    }
+
+    .navbar-nav{
+        height: 90vh;
+    }
 }
 
 
@@ -1294,6 +1240,8 @@ footer{
     width: 90%;
 }
 
+/*FOOTER responsive*/ 
+
 @media only screen and (max-width: 992px) {
 
 .footer_column2,
@@ -1304,8 +1252,23 @@ footer{
     
 }
 
+/*
+---------------------------------------------------------------------------------------------------------
+GENERAL
+*/
 
+.body_container--dark{
+    background-color: #2C3238;
+}
 
+.body_container--light{
+    background-color: #F3F6F0;
+    width: 100vw;
+}
+
+a{
+    text-decoration: none;
+}
 
 .display_block{
     display: block;
@@ -1314,4 +1277,36 @@ footer{
 
 .width_100{
     width: 100%;
+}
+
+.dark_bg{
+    background-color: #2C3238;
+}
+
+.light_bg{
+    background-color: #F3F6F0;
+}
+
+.dark_text{
+    color: #2C3238;
+}
+
+.light_text{
+    color: #F3F6F0;
+}
+
+.left_align{
+    text-align: left;
+}
+
+.center_align{
+    text-align: center;
+}
+
+.position_absolute{
+    position: absolute;
+}
+
+.padding_left{
+    padding-left: 6rem;
 }
