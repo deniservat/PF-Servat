@@ -108,47 +108,21 @@ a{
 /* ABOUT */
 
 .about_main_container{
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .about_main_section1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 10rem;
 }
 
-.about_main_section2{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 80%;
-    padding-top: 5rem;
-}
-
-.about_main_section3{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 80%;
-    padding: 5rem 0;
-}
+.about_main_section2,
+.about_main_section3,
 .about_main_section4, 
 .about_main_section5,
 .about_main_section6{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    padding: 5rem 0;
+    padding-top: 10rem;
 }
 
 .about_main_section6{
@@ -158,49 +132,10 @@ a{
     margin-right: 5rem;
 }
 
-.col1{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0 5rem;
-}
-
-.col1_section{
-    padding: none;
-}
-.col2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 3rem;
-
-}
-
-.col2_section4{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
+/*-----------------------------*/
 
 .about_main_section_details{
     padding-bottom: 3rem;
-}
-
-.row{
-    padding-bottom: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
-}
-
-.about_main_frame_card{
-    display: flex;
-    flex-direction: column;
-    margin-left: 2rem;
 }
 
 .about_main_card--default{
@@ -208,12 +143,7 @@ a{
     height: 400px;
     background-color: #FFE500;
     border-radius: 30px ;
-    padding-top: 4rem;
-    position: absolute;
-}
-
-.about_main_card--default:hover{
-    display: none;
+    padding-top: 5rem;
 }
 
 .about_main_card--hover{
@@ -225,27 +155,342 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 4rem;
+    padding-top: 5rem;
     box-shadow: 4px 4px 4px 0px rgba(58, 58, 58, 0.10);
 }
 
+
+/*-----------------------------*/
+
+.about_main_section2_heading{
+
+}
+
 .about_main_section2_card{
-    width: 275px;
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
-    margin: 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.about_main_section2_card_p{
+    padding-top: 2rem;
+}
+
+.h5_about_section2{
+    font-family: "mySecondFont";
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: 0.5rem;
+    padding-top: 2rem;
+}
+
+.p_about_section2{
+    font-family: "mySecondFont";
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    
 }
 
 
+/*-----------------------------*/
+
 .frame_stroke{
-    width: 450px;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 8rem;
 }
+
+.about_main_section4_col2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.p_about_section1_card{
+    font-family: "mySecondFont";
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    width: 350px;
+    color: #F0F0F0;
+    text-align: center;
+}
+
+.h3_about{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-decoration: underline;
+    text-align: center;
+    padding-bottom: 3rem;
+    margin-top: 10rem;
+    color: #2C3238;
+}
+
+.h2_about{
+    font-family: "myFirstFont-bold";
+    font-size: 8rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    color: #2C3238;
+}
+
+.h2_about_card{
+    font-family: "myFirstFont-bold";
+    font-size: 8rem;
+    line-height: 10rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    -webkit-text-stroke: .01rem #2C3238;
+    text-shadow: -2px -2px 0 #2C3238,
+                2px -2px 0 #2C3238,
+                -2px 2px 0 #2C3238,
+                2px 2px 0 #2C3238;
+    color: #F0F0F0;
+}
+
+.h4_about{
+    font-family: "mySecondFont";
+    font-size: 6rem;
+    line-height: 10rem;
+}
+
+.h5_about{
+    font-family: "myFirstFont-alt";
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    color: #F0F0F0;
+    padding-bottom: 2rem;
+}
+
+.h6_about{
+    font-family: "myFirstFont-alt";
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: 0.5rem;
+    color: #F0F0F0;
+}
+
+
+
+.h5_about_section3{
+    font-family: "mySecondFont";
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: 0.5rem;
+    position: absolute;
+    padding-left: 6rem;
+}
+
+
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .about_main_card--default{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .about_main_card--hover{
+        width: 350px;
+        height: 350px;
+        padding-top: 4rem;
+    }
+
+    .p_about_section1_card{
+            font-size: 1.6rem;
+            line-height: 3rem;
+            width: 300px;
+    }
+
+    .about_main_section2_card{
+        display: flex;
+        flex-direction: column;
+        padding-right: 1rem;
+    }
+
+    .h5_about_section2{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        letter-spacing: 0.5rem;
+        padding-top: 2rem;
+    }
+    
+    .p_about_section2{
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+
+    }
+    
+
+
+@media only screen and (min-width: 1201px) {
+
+    .about_main_card--default{
+        position: absolute;
+    }
+
+    .about_main_card--default:hover{
+        display: none;
+}
+}
+
+
+@media only screen and (min-width:769px) and (max-width:1200px) {
+
+    .about_main_frame_card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .about_main_card--default{
+        margin-right: 5rem;
+        width: 350px;
+        height: 350px;
+    }
+
+    .about_main_card--hover{
+        width: 350px;
+        height: 350px;
+    }
+
+    .p_about_section1_card{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        width: 280px;
+    }
+
+    .about_main_section2_card{
+        display: flex;
+        flex-direction: column;
+        padding-right: 1rem;
+    }
+
+    .h5_about_section2{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        letter-spacing: 0.5rem;
+        padding-top: 2rem;
+    }
+    
+    .p_about_section2{
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    .arrow_down{
+        display: inline;
+        padding-left: 2rem;
+    }
+    .arrow_side{
+        display: none;
+    }
+    .about_main_section2_heading{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about_main_frame_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .about_main_card--default{
+        margin-bottom: 5rem;
+    }
+
+    .about_main_section2_card{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+    }
+
+    .h5_about_section2{
+        font-size: 2.5rem;
+        line-height: 4rem;
+        letter-spacing: 0.5rem;
+        padding-top: 2rem;
+    }
+    
+    .p_about_section2{
+        font-size: 1.7rem;
+        line-height: 2.7rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .about_main_frame_card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .about_main_card--default{
+        width: 280px;
+        height: 280px;
+        margin-bottom: 5rem;
+        padding-top: 3rem;
+    }
+
+    .about_main_card--hover{
+        width: 280px;
+        height: 300px;
+    }
+
+    .p_about_section1_card{
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+        width: 240px;
+    }
+
+    .h5_about{
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 240px;
+    }
+
+    .h2_about_card{
+        font-size: 6rem;
+        line-height: 8rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .h2_about{
+        font-size: 6rem;
+        line-height: 7rem;
+        letter-spacing: 0.5rem;
+        width: 90%;
+    }
+}
+
+
+
 
 /* WORK */
 
@@ -628,89 +873,7 @@ TEXT STYLE
 }
 
 
-.h3_about{
-    font-family: "myFirstFont-alt";
-    font-size: 4rem;
-    line-height: 5rem;
-    letter-spacing: 1rem;
-    text-decoration: underline;
-    text-align: center;
-    padding-bottom: 3rem;
-    margin-top: 10rem;
-    color: #2C3238;
-}
 
-.h2_about{
-    font-family: "myFirstFont-bold";
-    font-size: 10rem;
-    line-height: 12rem;
-    letter-spacing: 1rem;
-    text-align: center;
-    padding-bottom: 3rem;
-    color: #2C3238;
-}
-
-.h2_about_card{
-    font-family: "myFirstFont-bold";
-    font-size: 10rem;
-    line-height: 12rem;
-    letter-spacing: 1rem;
-    text-align: center;
-    -webkit-text-stroke: .01rem #2C3238;
-    text-shadow: -2px -2px 0 #2C3238,
-                2px -2px 0 #2C3238,
-                -2px 2px 0 #2C3238,
-                2px 2px 0 #2C3238;
-    color: #F0F0F0;
-}
-
-.h4_about{
-    font-family: "mySecondFont";
-    font-size: 6rem;
-    line-height: 10rem;
-}
-
-.h5_about{
-    font-family: "myFirstFont-alt";
-    font-size: 3rem;
-    line-height: 4rem;
-    letter-spacing: 0.5rem;
-    color: #F0F0F0;
-    padding-bottom: 2rem;
-}
-
-.h6_about{
-    font-family: "myFirstFont-alt";
-    font-size: 2rem;
-    line-height: 3rem;
-    letter-spacing: 0.5rem;
-    color: #F0F0F0;
-}
-
-.h5_about_section2{
-    font-family: "mySecondFont";
-    font-size: 3rem;
-    line-height: 5rem;
-    letter-spacing: 0.5rem;
-    width: 290px;
-}
-
-.h5_about_section3{
-    font-family: "mySecondFont";
-    font-size: 3rem;
-    line-height: 5rem;
-    letter-spacing: 0.5rem;
-    position: absolute;
-    padding-left: 6rem;
-}
-
-
-.p_about_section2{
-    font-family: "mySecondFont";
-    font-size: 3rem;
-    line-height: 3.5rem;
-    width: 270px;
-}
 
 p{
     font-family: "mySecondFont";
