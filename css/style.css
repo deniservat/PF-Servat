@@ -44,7 +44,6 @@ a{
 /* INDEX */
 
 .index_main_container{
-    width: 100%;
     overflow: hidden;
 }
 
@@ -62,44 +61,31 @@ a{
 }
 
 .index_main_section2{
-    width: 100%;
-    overflow: hidden;
     padding-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 10rem;
     background-color: #2C3238;
 }
 
 .index_main_section3{
     padding-top: 12rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     background-color: #F3F6F0;
+
+}
+
+.index_row_90{
+    padding: 0 5vw;
+    width: 90vw;
 }
 
 .index_main_section4{
-    width: 100%;
+    width: 90%;
     padding-top: 12rem;
     padding-bottom: 12rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #2C3238;
 }
 
 .index_main_section5{
-    width: 100%;
-    padding: 12rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
+    padding: 12rem 0;
     background-color: #F3f6f0;
 }
 
@@ -288,8 +274,6 @@ a{
     letter-spacing: 0.5rem;
     color: #F0F0F0;
 }
-
-
 
 .h5_about_section3{
     font-family: "mySecondFont";
@@ -661,6 +645,63 @@ a{
 .careers_illustration{
     width: 90%;
 }
+
+
+.h4_careers_heading{
+    font-family: "mySecondFont";
+    font-size: 6rem;
+    line-height: 10rem;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+    .arrow_down_2{
+        display: inline;
+        padding-left: 2rem;
+    }
+    .arrow_side_2{
+        display: none;
+    }
+    .about_main_section_heading{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+
+    .arrow_down_2{
+        display: none;
+    }
+    
+    .about_main_section_heading{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .arrow_side_2{
+        display: none;
+        padding-left: 5rem;
+    }
+    
+    .about_main_section_heading{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 990px) {
+
+  
+    
+}
+
 
 
 /*CAREERS accordion*/
@@ -1088,7 +1129,6 @@ header{
     background-color: #F3F6F0;
     width: 100vw;
     height: 6rem;
-
 }
 
 .dark_bg{
@@ -1121,7 +1161,12 @@ header{
     .nav_bootstrap{
         height: 10rem;
     }
+
+    .navbar-nav{
+        height: 90vh;
+    }
 }
+
 
 .nav-link{
     list-style-type: none;  
