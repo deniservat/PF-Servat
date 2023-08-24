@@ -128,9 +128,6 @@ a{
 .about_main_section6{
     padding-bottom: 20rem;
 }
-.about_main_img_30{
-    margin-right: 5rem;
-}
 
 /*-----------------------------*/
 
@@ -159,12 +156,7 @@ a{
     box-shadow: 4px 4px 4px 0px rgba(58, 58, 58, 0.10);
 }
 
-
 /*-----------------------------*/
-
-.about_main_section2_heading{
-
-}
 
 .about_main_section2_card{
     display: flex;
@@ -191,7 +183,6 @@ a{
     
 }
 
-
 /*-----------------------------*/
 
 .frame_stroke{
@@ -201,13 +192,33 @@ a{
     justify-content: center;
     align-items: center;
     padding-top: 8rem;
+    padding-left: 40px;
+}
+
+.about_yellowstroke{
+    width: 400px;
+}
+
+/*-----------------------------*/
+
+.about_main_section4_details{
+    display: flex;
+    flex-direction: row;
 }
 
 .about_main_section4_col2{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: flex-end;
+}
+
+/*-----------------------------*/
+
+
+.p_about_section3{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 
 .p_about_section1_card{
@@ -391,6 +402,29 @@ a{
 
 }
 
+
+@media only screen and (min-width:769px) and (max-width:1400px) {
+
+    .about_main_section4_details{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about_main_section4_heading{
+        padding-bottom: 2rem;
+    }
+
+
+}
+
+@media only screen and (min-width: 991px) {
+    .about_main_section3_subheading{
+        padding-left: 5rem;
+    }
+}
+
+
 @media only screen and (max-width: 990px) {
 
     .arrow_down{
@@ -400,10 +434,14 @@ a{
     .arrow_side{
         display: none;
     }
-    .about_main_section2_heading{
+    .about_main_section_heading{
         display: flex;
         flex-direction: row;
         padding-bottom: 5rem;
+    }
+
+    .frame_stroke{
+        padding-left: 20rem;
     }
 }
 
@@ -424,8 +462,6 @@ a{
     .about_main_section2_card{
         display: flex;
         flex-direction: column;
-        width: 50%;
-
     }
 
     .h5_about_section2{
@@ -438,6 +474,10 @@ a{
     .p_about_section2{
         font-size: 1.7rem;
         line-height: 2.7rem;
+    }
+
+    .about_main_section_img{
+        display: none;
     }
 }
 
@@ -486,6 +526,45 @@ a{
         line-height: 7rem;
         letter-spacing: 0.5rem;
         width: 90%;
+    }
+
+    .h4_about{
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    .h5_about_section3{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    .frame_stroke{
+        padding-left: 15rem;
+    }
+
+    .about_yellowstroke{
+        width: 280px;
+    }
+
+    .p_about_section3{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .h4_about_section{
+        font-size: 4.5rem;
+        line-height: 5.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .about_main_section4_details{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about_main_section4_heading{
+        padding-bottom: 2rem;
     }
 }
 
