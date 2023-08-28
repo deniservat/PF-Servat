@@ -1,0 +1,95 @@
+@use 'general';
+@use 'footer';
+@use 'header';
+@import 'variables';
+
+@mixin bg-dark{
+    background-color: #2C3238;
+}
+
+@mixin bg-light{
+    background-color: #f0f3f6;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_main_container{
+    overflow: hidden;
+    @include bg-dark;
+
+    .index_main_section1{
+        @include flex-column-center;
+        padding-top: 20rem;
+        padding-bottom: 20rem;
+        background-image: url(../img/INDEX-bg-1920x1080.svg);
+
+        .logo{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .index_main_section2{
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+        @include bg-dark;
+    }
+    
+    .index_main_section3{
+        padding-top: 12rem;
+        @include bg-light;
+
+        .index_row_90{
+            padding: 0 5vw;
+            width: $w90;
+        }
+    
+    }
+
+    .index_main_section4{
+        width: $w90;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        @include bg-dark;
+    }
+
+    .index_main_section5{
+        padding: 12rem 0;
+        @include bg-light;
+    }
+    
+}
+
+.h3_index{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: #F3F6F0;
+}
+
+.h6_index{
+    font-family: "mySecondFont";
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: #F3f6f0;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.h2_index{
+    font-family: "myFirstFont-bold";
+    font-size: 10rem;
+    line-height: 11rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    color: #2C3238;
+    padding-bottom: 4rem;
+}

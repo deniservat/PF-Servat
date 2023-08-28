@@ -1,0 +1,146 @@
+@use 'general';
+@use 'footer';
+@use 'header';
+@import 'variables';
+
+@mixin bg-light{
+    background-color: #f0f3f6;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-column-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@mixin flex-row-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bg--light{
+    @include bg-light;
+}
+
+.contact_main_container{
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+    width: $w90;
+
+    .contact_main_section1{
+        .contact_illustration{
+            width: $w90;
+        }
+    }
+
+    .contact_main_section2{
+        padding-top: 10rem;
+    }
+}
+
+.contact_main_section2{
+    padding-top: 10rem;
+
+    .form-area{
+        padding-top: 10rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .form_input{
+        height: 4rem;
+    }
+
+    .form_textarea{
+        height: 8rem;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .form-control {
+        background-color: #f0f0f0;
+        border: 1px solid #2C3238;
+    }
+
+    button{
+        margin-top: 5rem;
+        border: none;
+    }
+}
+
+.h4_contact{
+    font-family: "mySecondFont";
+    font-size: 6rem;
+    line-height: 7rem;
+}
+
+.h5_contact{
+    font-family: "myFirstFont-alt";
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+    color:  #2C3238;
+    text-align: left;
+}
+
+.h3_contact{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    color:  #2C3238;
+}
+
+/*CONTACT responsive*/
+
+@media only screen and (max-width: 576px) {
+
+    .contact_main_container{
+       width: $w90;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+
+    .contact_main_container_text{
+        padding-left: 10rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    .contact_main_container_text{
+        padding-top: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+
+    .h3_contact{
+        padding-right: 1rem;
+    }
+}

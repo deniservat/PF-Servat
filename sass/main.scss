@@ -1,0 +1,39 @@
+@use 'partials/index';
+@use 'partials/header';
+@use 'partials/footer';
+@use 'partials/about';
+@use 'partials/work';
+@use 'partials/careers';
+@use 'partials/contact';
+@use 'partials/buttons';
+@use 'partials/text';
+@use 'partials/variables';
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+
+@font-face {
+    font-family: "myFirstFont-bold";
+    src:url("../fonts/ponter/ponter-bold.ttf");
+}
+
+@font-face {
+    font-family: "myFirstFont-alt";
+    src:url("../fonts/ponter/ponter-alt.ttf");
+}
+
+
+@font-face {
+    font-family: "mySecondFont";
+    src:url("../fonts/poppins/poppins-regular.ttf");
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+

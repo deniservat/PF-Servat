@@ -1,0 +1,91 @@
+@import 'variables';
+
+@mixin flex-row-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin bg-dark{
+    background-color: #2C3238;
+}
+
+@mixin bg-light{
+    background-color: #f0f3f6;
+}
+
+@mixin color-dark{
+    color: #2C3238
+}
+
+@mixin color-light{
+    color: #f0f3f6
+}
+
+.bg--dark{
+    @include bg-dark;
+}
+
+.bg--light{
+    @include bg-light;
+}
+
+.text-dark{
+    @include color-dark;
+}
+
+.text-light{
+    @include color-light;
+}
+
+footer{
+    @include bg-dark;
+    padding: 5rem 0;
+}
+
+.h6-footer{
+    font-family: "mySecondFont";
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    width: 355px;
+    color: #F0F0F0;
+    text-decoration: none;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.p-footer{
+    font-family: "mySecondFont";
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 355px;
+    color: #F0F0F0;
+    text-decoration: none;
+    text-align: left;
+}
+
+.footer_contact_frame{
+    @include flex-row-left;
+    padding-bottom: 1rem;
+}
+
+.footer_icn{
+    padding-right: 2rem;
+}
+
+.footer_logo{
+    width: $w90;
+}
+
+/*FOOTER responsive*/ 
+
+@media only screen and (max-width: 992px) {
+
+.footer_column2,
+.footer_column3{
+    padding-left: 4rem;
+    padding-top: 4rem;
+}
+    
+}

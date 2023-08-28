@@ -1,0 +1,150 @@
+@use 'general';
+@use 'footer';
+@use 'header';
+@import 'variables';
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex-column-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex-row-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@mixin light{
+    background-color: #f0f3f6;
+}
+
+.light{
+    @include light;
+}
+
+.work_main_container{
+    width: $w90;
+    overflow: hidden;
+    padding-top: 12rem;
+
+    .work_main_section1{
+        margin-top: 10rem;
+    }
+
+    .work_main_section3{
+        padding: 10rem 0;
+
+        .work_main_card_project_latest{
+            @include flex-column-left;
+            padding-bottom: 10rem;
+        }
+    }
+}
+
+.work_main_heading{
+    margin-bottom: 7rem;
+}
+
+.work_main_img_50{
+    width: $full-width;
+    margin-bottom: 2rem;
+}
+
+.work_main_img_25{
+    @extend .work_main_img_50;
+}
+
+.work_main_card_project{
+    @include flex-column-left;
+    margin-bottom: 10rem;
+    padding: 0 1rem;
+}
+
+.arrow_down{
+    display: none;
+}
+
+.h2_work{
+    font-family: "myFirstFont-bold";
+    font-size: 10rem;
+    line-height: 11rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    color: #2C3238;
+}
+
+.p_work{
+    font-family: "mySecondFont";
+    font-size: 2rem;
+    line-height: 3rem;
+    color:  #2C3238;
+    text-align: left;
+    display: inline;
+}
+
+.h6_work{
+    font-family: "myFirstFont-alt";
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.5rem;
+    color:  #2C3238;
+    text-align: left;
+}
+
+/*WORK responsive*/
+
+@media only screen and (max-width: 1200px) {
+
+    .work_main_section3_col1{
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    .work_main_section3_col1{
+        padding-bottom: 5rem;
+    }
+    .arrow_down{
+        display: inline;
+        padding-left: 2rem;
+    }
+    .arrow_side{
+        display: none;
+    }
+    .work_main_section3_col1{
+        display: flex;
+        flex-direction: row;
+    }
+}

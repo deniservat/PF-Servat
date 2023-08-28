@@ -1,0 +1,141 @@
+@import 'variables';
+
+@mixin bg-dark{
+    background-color: #2C3238;
+}
+
+@mixin bg-light{
+    background-color: #f0f3f6;
+}
+
+@mixin color-dark{
+    color: #2C3238
+}
+
+@mixin color-light{
+    color: #f0f3f6
+}
+
+.bg--dark{
+    @include bg-dark;
+}
+
+.bg--light{
+    @include bg-light;
+}
+
+.text-dark{
+    @include color-dark;
+}
+
+.text-light{
+    @include color-light;
+}
+
+header{
+    width: $full-width;
+
+    .nav_bootstrap{
+        position: fixed;
+        z-index: 1;
+        @include bg-dark;
+        width: $full-width;
+        height: 6rem;
+
+        .btn_logo{
+            margin-top: 0;
+            padding-top: 5rem;
+            position: relative;
+        }
+
+        .navbar-nav{
+            padding-top: 2rem;
+            width: $full-width;
+
+            .nav-link{
+                list-style-type: none;  
+            }
+
+            .li--light{ 
+                font-family: "myFirstFont-bold";
+                font-size: 4rem;
+                line-height: 5rem;
+                letter-spacing: 0.5rem;
+                text-decoration: none;
+                -webkit-text-stroke: 0.1rem #2C3238;
+                @include color-light;
+                padding-top: 8rem;
+                &:hover{ 
+                    -webkit-text-stroke: 0;
+                    color: #2C3238;
+                }
+            }
+            
+            .li--light--active{ 
+                @extend .li--light;
+                @include color-dark;
+            }
+            
+            .li--dark{ 
+                font-family: "myFirstFont-bold";
+                font-size: 4rem;
+                line-height: 5rem;
+                letter-spacing: 0.5rem;
+                text-decoration: none;
+                -webkit-text-stroke: 0.1rem #f3f6f0;
+                color: transparent;
+                padding-top: 8rem;
+                &:hover{ 
+                    @include color-light;
+                }
+            }
+            
+            .li--dark--active{ 
+                @extend .li--dark;
+                @include color-light;
+                &:hover{ 
+                    @include color-light;
+                }
+            }
+        }
+
+        .btn-burger{
+            margin-top: 0;
+        }
+    }
+}
+
+
+/*NAV responsive*/ 
+
+@media only screen and (max-width: 990px) {
+    .li--light{ 
+        padding-top: 4rem;
+    }
+    
+    .li--light--active{ 
+        padding-top: 4rem;
+    }
+    
+    .li--dark{ 
+        padding-top: 4rem;
+    }
+    
+    .li--dark--active{ 
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .btn_logo{
+        padding-top: 1rem;
+    }
+
+    .nav_bootstrap{
+        height: 10rem;
+    }
+
+    .navbar-nav{
+        height: 90vh;
+    }
+}

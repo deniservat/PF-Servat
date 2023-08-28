@@ -1,0 +1,95 @@
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin bg-dark{
+    background-color: #2C3238;
+}
+
+@mixin bg-light{
+    background-color: #f0f3f6;
+}
+
+@mixin color-dark{
+    color: #2C3238
+}
+
+@mixin color-light{
+    color: #f0f3f6
+}
+
+.bg--dark{
+    @include bg-dark;
+}
+
+.bg--light{
+    @include bg-light;
+}
+
+.text-dark{
+    @include color-dark;
+}
+
+.text-light{
+    @include color-light;
+}
+
+.btn--large{
+    background-color: #FFE500;
+    width: 240px;
+    height: 72px;
+    border-radius: 50px;
+    @include flex-column-center;
+    &:hover{
+        @include bg-light;
+    }
+}
+
+.btn--large--light{
+    @extend .btn--large;
+    box-shadow: 4px 8px 8px 0px rgba(35, 35, 35, 0.20);
+    &:hover{
+        @include bg-dark;
+    }
+    .p--light{
+        font-family: "mySecondFont";
+        font-size: 2rem;
+        line-height: 7rem;
+        color:  #2C3238;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            @include color-light;
+        }
+    }
+}
+
+.btn--secondary{
+    background-color: #FFE500;
+    width: 130px;
+    height: 48px;
+    border-radius: 50px;
+    @include flex-column-center;
+    box-shadow: 4px 8px 8px 0px rgba(35, 35, 35, 0.20);
+    margin-top: 1rem;
+    &:hover{
+        @include bg-light;
+    }
+    .p_btn_secondary{
+        font-family: "mySecondFont";
+        font-size: 1.5rem;
+        line-height: 4rem;
+        color:  #2C3238;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            @include color-dark;
+        }
+    }
+}
+
+

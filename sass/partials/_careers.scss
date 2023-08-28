@@ -1,0 +1,229 @@
+@use 'general';
+@use 'footer';
+@use 'header';
+@import 'variables';
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex-row-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin bg-dark{
+    background-color: #2C3238;
+}
+
+@mixin bg-light{
+    background-color: #f0f3f6;
+}
+
+@mixin color-dark{
+    color: #2C3238
+}
+
+@mixin color-light{
+    color: #f0f3f6
+}
+
+.bg--dark{
+    @include bg-dark;
+}
+
+.bg--light{
+    @include bg-light;
+}
+
+.text-dark{
+    @include color-dark;
+}
+
+.text-light{
+    @include color-light;
+}
+
+
+.careers_main_container{
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    width: $w90;
+
+    .careers_main_section1{
+
+        .careers_illustration{
+            width: $w90;
+        }
+
+        .h4_careers_heading{
+            font-family: "mySecondFont";
+            font-size: 6rem;
+            line-height: 10rem;
+        }
+    }
+
+    .careers_main_section2{
+        padding-top: 10rem;
+
+        .accordion{
+            background: transparent;
+        }
+
+        .accordion-item{
+            background-color: #2C3238;
+            border: none;
+            margin-bottom: 2rem;
+        }
+
+        .accordion-body{
+            background-color: #2C3238;
+            outline: none;
+            border: none;
+        }
+
+        .accordion-header{
+            border-radius: 12px;
+            outline: 1px solid #F3f6f0;
+            height: 7rem;
+            
+        }
+
+        .accordion-button{
+            background: transparent;
+            margin-top: 0;
+            padding-top: 2rem;
+            outline: none;
+            border: none;
+            height: 7rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            & :focus{
+                background: transparent;
+                color: #F3F6F0;
+                margin-top: 0;
+                padding-top: 2rem;
+                outline: none;
+                border: none;
+            }
+            &:not(.collapsed){
+                background: transparent;
+                color: #F3F6F0;
+                margin-top: 0;
+                padding-top: 2rem;
+                
+            }
+        }
+
+        .collapsed, .open{
+            margin-bottom: 2rem;
+        }
+
+        .span_underline{
+            text-decoration: underline;
+        }
+    }
+
+    .careers_main_section3{
+        padding-top: 10rem;
+        padding-bottom: 20rem;
+    }
+    
+}
+
+.h5_careers{
+    font-family: "myFirstFont-alt";
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.5rem;
+    text-decoration: underline;
+    color: #F3F6F0;
+    text-align: left;
+}
+
+.h3_careers{
+    font-family: "myFirstFont-alt";
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: 1rem;
+    text-align: left;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+    color: #F3F6F0;
+}
+
+.p_careers{
+    font-family: "mySecondFont";
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: #F0F0F0;
+    text-align: left;
+}
+
+/*CAREERS responsive*/
+
+@media only screen and (max-width: 990px) {
+
+    .careers_main_container_text{
+        padding-bottom: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .careers_main_section2_col1{
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+    .arrow_down_2{
+        display: inline;
+        padding-left: 2rem;
+    }
+    .arrow_side_2{
+        display: none;
+    }
+    .about_main_section_heading{
+        @include flex-row-left;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+
+    .arrow_down_2{
+        display: none;
+    }
+    
+    .about_main_section_heading{
+        @include flex-column-left;
+        padding-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .arrow_side_2{
+        display: none;
+        padding-left: 5rem;
+    }
+    
+    .about_main_section_heading{
+        @include flex-row-left;
+        padding-bottom: 5rem;
+    }
+}

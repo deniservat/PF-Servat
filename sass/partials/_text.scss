@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'general';
+
+
+.p{
+    font-family: "mySecondFont";
+    font-size: 2rem;
+    line-height: 3rem;
+    color:  #2C3238;
+    text-align: center;
+    text-decoration: none;
+    &:hover{
+        @include color-light;
+    }
+}
+
+p{
+    font-family: "mySecondFont";
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+    width: 355px;
+    color: #F0F0F0;
+    text-align: center;
+}

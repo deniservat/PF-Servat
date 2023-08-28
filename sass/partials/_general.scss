@@ -1,0 +1,91 @@
+
+@mixin bg-dark{
+    background-color: #2C3238;
+}
+
+@mixin bg-light{
+    background-color: #f3f6f0;
+}
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin color-dark{
+    color: #2C3238
+}
+
+@mixin color-light{
+    color: #f3f6f0;
+}
+
+.bg--dark{
+    @include bg-dark;
+}
+
+.bg--light{
+    @include bg-light;
+}
+
+.text--dark{
+    @include color-dark;
+}
+
+.text--light{
+    @include color-light;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.body_container--light{
+    background-color: #F3F6F0;
+    width: 100vw;
+}
+
+.display_block{
+    display: block;
+    box-sizing: content-box;
+}
+
+.width_100{
+    width: 100%;
+}
+
+.dark_bg{
+    background-color: #2C3238;
+}
+
+.light_bg{
+    background-color: #F3F6F0;
+}
+
+.dark_text{
+    color: #2C3238;
+}
+
+.light_text{
+    color: #F3F6F0;
+}
+
+.left_align{
+    text-align: left;
+}
+
+.center_align{
+    text-align: center;
+}
+
+.position_absolute{
+    position: absolute;
+}
+
+.padding_left{
+    padding-left: 6rem;
+}
