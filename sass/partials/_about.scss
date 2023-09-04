@@ -238,17 +238,32 @@
 
 /*ABOUT responsive*/
 
-@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+@media only screen and (min-width: 1201px){
 
     .about_main_card--default{
         width: 350px;
         height: 350px;
+    }
+
+    .about_main_card--default:hover{
+        
     }
     
     .about_main_card--hover{
         width: 350px;
         height: 350px;
         padding-top: 4rem;
+        position: absolute;
+        display: none;
+        transition: 5s;
+        
+    }
+
+    .about_main_card--hover:hover{
+        width: 350px;
+        height: 350px;
+        padding-top: 4rem;
+        display: inline;
     }
 
     .p_about_section1_card{
@@ -275,18 +290,13 @@
         line-height: 2.7rem;
     }
 
-    }
-
-@media only screen and (min-width: 1201px) {
-
     .about_main_card--default{
         position: absolute;
+        transition: 5s;
     }
 
-    .about_main_card--default:hover{
-        display: none;
-}
-}
+    }
+
 
 @media only screen and (min-width:769px) and (max-width:1200px) {
 
