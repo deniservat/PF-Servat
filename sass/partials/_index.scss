@@ -8,7 +8,7 @@
 }
 
 @mixin bg-light{
-    background-color: #f0f3f6;
+    background-color: #F3F6F0;
 }
 
 @mixin flex-column-center{
@@ -34,34 +34,34 @@
     }
 
     .index_main_section2{
-        padding-top: 5rem;
+   
         padding-bottom: 10rem;
         @include bg-dark;
     }
     
     .index_main_section3{
-        padding-top: 12rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
         @include bg-light;
-
-        .index_row_90{
-            padding: 0 5vw;
-            width: $w90;
-        }
-    
+       
     }
 
     .index_main_section4{
         width: $w90;
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
         @include bg-dark;
     }
 
     .index_main_section5{
-        padding: 12rem 0;
+        padding: 10rem 0;
         @include bg-light;
     }
     
+}
+
+.work_main_card_project_latest{
+    padding-right: 2rem;
 }
 
 .h3_index{
@@ -92,4 +92,11 @@
     text-align: left;
     color: #2C3238;
     padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+.work_main_card_project_latest{
+    padding-bottom: 5rem;
+}
+
 }

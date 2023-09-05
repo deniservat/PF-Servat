@@ -68,6 +68,8 @@
         .work_main_card_project_latest{
             @include flex-column-left;
             padding-bottom: 10rem;
+            
+            white-space: pre-wrap;
         }
     }
 }
@@ -85,10 +87,16 @@
     @extend .work_main_img_50;
 }
 
+.work_main_img_25{
+    @extend .work_main_img_50;
+    padding-right: 5rem;
+}
+
 .work_main_card_project{
     @include flex-column-left;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     padding: 0 1rem;
+    width: 100%;
 }
 
 .arrow_down{
@@ -106,11 +114,11 @@
 
 .p_work{
     font-family: "mySecondFont";
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     color:  #2C3238;
     text-align: left;
-    display: inline;
+    width: 90%;
 }
 
 .h6_work{
@@ -146,5 +154,20 @@
     .work_main_section3_col1{
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+
+    .p_work{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .work_main_card_project_latest{
+        padding-right: 2rem;
     }
 }

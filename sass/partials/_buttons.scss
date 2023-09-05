@@ -30,11 +30,11 @@
     @include bg-light;
 }
 
-.text-dark{
+.text--dark{
     @include color-dark;
 }
 
-.text-light{
+.text--light{
     @include color-light;
 }
 
@@ -47,18 +47,38 @@
     &:hover{
         @include bg-light;
     }
+
+    .p--btn--light{
+        font-family: "mySecondFont";
+        font-size: 2rem;
+        line-height: 8rem;
+        @include color-dark;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            @include color-light
+        }
+    }
+    .p--btn{
+        font-family: "mySecondFont";
+        font-size: 2rem;
+        line-height: 3rem;
+        @include color-dark;
+        text-align: center;
+        text-decoration: none;
+    }
 }
 
 .btn--large--light{
     @extend .btn--large;
-    box-shadow: 4px 8px 8px 0px rgba(35, 35, 35, 0.20);
+    box-shadow: 4px 4px 4px 0px rgba(58, 58, 58, 0.10);
     &:hover{
         @include bg-dark;
     }
     .p--light{
         font-family: "mySecondFont";
         font-size: 2rem;
-        line-height: 7rem;
+        line-height: 8rem;
         color:  #2C3238;
         text-align: center;
         text-decoration: none;
@@ -66,7 +86,15 @@
             @include color-light;
         }
     }
-}
+
+    .p--pt-1{
+        @extend .p--light;
+        padding-top: 1rem;
+        
+    }
+    
+    }
+
 
 .btn--secondary{
     background-color: #FFE500;
@@ -74,7 +102,7 @@
     height: 48px;
     border-radius: 50px;
     @include flex-column-center;
-    box-shadow: 4px 8px 8px 0px rgba(35, 35, 35, 0.20);
+    box-shadow: 4px 4px 4px 0px rgba(58, 58, 58, 0.10);
     margin-top: 1rem;
     &:hover{
         @include bg-light;
@@ -91,5 +119,4 @@
         }
     }
 }
-
 

@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOTI</title>
+    <meta name="description" content="Email us to info@noti.com, or give us a call at +4407830669276.">
+    <meta name="description" content="Design agency contact, London design agency, Barcelona design studio, Buenos Aires creative firm, Contact information, Get in touch, Design services contact, Multinational design agency, Design consultancy email">
+    <title>Contact - NOTI</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -12,9 +15,9 @@
   <div class="body_container--light">
     <header>
       <nav class="navbar navbar-expand-lg nav_bootstrap">
-        <div class="container-fluid  bg--light">
-          <a class="navbar-brand" href="">
-            <img class="btn_logo" src="../img/logo-circle-light.svg" width="80px">
+        <div class="container-fluid bg--light">
+          <a class="navbar-brand" href="../index.html">
+            <img class="btn_logo" src="../img/logo-circle-light.svg" alt="Noti logo N over a circle" width="80px">
           </a>
           <button class="navbar-toggler shadow-none border-0 btn-burger" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img src="../img/icn-burger-dark.svg" width="40px">
@@ -35,42 +38,40 @@
         
       <main class="container contact_main_container">
         <section class="row contact_main_section1">
-          <article class="col-md-12 col-lg-6 contact_main_container_illustration">
-              <img src="../img/CONTACT-illustration-500x500.png" class="contact_illustration">
+          <article class="col-md-12 col-lg-6 contact_main_container_illustration" data-aos="fade-right">
+              <img src="../img/CONTACT-illustration-500x500.png" class="contact_illustration" alt="image showing two people chatting drinking coffee, one of them coming out of a mobile phone">
           </article>
   
           <article class="col-md-12 col-lg-6 contact_main_container_text">
-            <h1 class="h5_contact">LET’S TALK</h1>
-            <h2 class="h3_contact">IF YOU WANT ALL EYES ON YOU, COME AND SAY HELLO</h2>
-            <div class="btn--large--light">
-              <a href="" class="p--light">Get in touch</a>
-            </div>
+            <h1 class="h5_contact" data-aos="fade-up" data-aos-offset="500" data-aos-duration="600">LET’S TALK</h1>
+            <h2 class="h3_contact" data-aos="fade-up" data-aos-offset="500" data-aos-duration="700">IF YOU WANT ALL EYES ON YOU, COME AND SAY HELLO</h2>
+            <div class="btn--large--light" data-aos="fade-up" data-aos-offset="200" data-aos-duration="800"><a href="./contact.html" class="p--btn--light">Get in touch</a></div>
           </article>
   
         <section class="container contact_main_section2">
           <article class="row form-area">
-                    <div class="col-sm-12 col-lg-6">
+                    <div class="col-sm-12 col-lg-6" data-aos="fade-right">
                         <div class="left">
-                          <h2 class="h5_contact">GET IN TOUCH</h2>
+                          <h3 class="h5_contact">GET IN TOUCH</h3>
                           <h3 class="h3_contact">FOR BUSINESS ENQUIRIES</h3>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-lg-6">
+                    <div class="col-sm-12 col-lg-6" data-aos="fade-left">
                         <div class="right">
                             <form>
                               <div class="mb-3 form_wrap">
-                                <label for="exampleInputEmail1" class="form-label"><p class="p left_align">Your name</p></label>
+                                <label for="exampleInputEmail1" class="form-label"><p class="p text--dark left_align">Your name</p></label>
                                 <input type="text" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3 form_wrap">
-                                <label for="exampleInputEmail1" class="form-label"><p class="p left_align">Email address</p></label>
+                                <label for="exampleInputEmail1" class="form-label"><p class="p text--dark left_align">Email address</p></label>
                                 <input type="email" class="form-control form_input" id="exampleInputEmail1" aria-describedby="emailHelp">
                               </div>
                               <div class="mb-3 form_wrap">
-                                <label for="exampleInputPassword1" class="form-label"><p class="p left_align">Message</p></label>
+                                <label for="exampleInputPassword1" class="form-label"><p class="p text--dark left_align">Message</p></label>
                                   <textarea type="password" class="form-control form_textarea" id="exampleInputPassword1"></textarea>
                               </div>
-                              <button type="submit" class="btn--large--light"><p class="p--light">Submit</p></button>
+                              <button type="submit" class="btn--large--light"><p class="p--pt-1">Submit</p></button>
                             </form>
                         </div>
                     </div>
@@ -81,11 +82,12 @@
       </main>
   
       <footer class="container-fluid">
-        <section class="row">
+        <section class="row justify-content-around">
   
           <article class="col-lg-5 col-xs-10">
             <img class="footer_logo" src="../img/logo.svg">
           </article>
+
           <article class="col-lg-2 col-md-6 col-xs-10 footer_column2">
             <h3 class="h6-footer">Stay connected</h3>
             <div class="footer_socialicons">
@@ -94,6 +96,7 @@
               <a href=""><img class="footer_icn" src="../img/icn-linkedin.svg" width="40px"></a>       
             </div>
           </article>
+
           <article class="col-lg-3 col-md-6 col-xs-10 footer_column3">
             <h3 class="h6-footer">Contact us</h3>
             <div class="footer_contact_frame">
@@ -113,5 +116,9 @@
       </footer>
     </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>

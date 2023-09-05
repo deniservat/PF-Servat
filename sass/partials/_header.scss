@@ -40,12 +40,10 @@ header{
         z-index: 1;
         @include bg-dark;
         width: $full-width;
-        height: 6rem;
+        height: 5rem;
 
         .btn_logo{
             margin-top: 0;
-            padding-top: 5rem;
-            position: relative;
         }
 
         .navbar-nav{
@@ -109,26 +107,8 @@ header{
 /*NAV responsive*/ 
 
 @media only screen and (max-width: 990px) {
-    .li--light{ 
-        padding-top: 4rem;
-    }
-    
-    .li--light--active{ 
-        padding-top: 4rem;
-    }
-    
-    .li--dark{ 
-        padding-top: 4rem;
-    }
-    
-    .li--dark--active{ 
-        padding-top: 4rem;
-    }
-}
-
-@media screen and (max-width: 990px) {
     .btn_logo{
-        padding-top: 1rem;
+        padding-top: 0;
     }
 
     .nav_bootstrap{
@@ -136,6 +116,28 @@ header{
     }
 
     .navbar-nav{
-        height: 90vh;
+        height: 80vh;
     }
+    .li--light{ 
+        padding-top: 2rem;
+    }
+    
+    .li--light--active{ 
+        padding-top: 2rem;
+    }
+    
+    .li--dark{ 
+        padding-top: 2rem;
+    }
+    
+    .li--dark--active{ 
+        padding-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    .btn_logo{
+        padding-top: 3rem;
+    }
+
 }

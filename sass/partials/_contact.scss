@@ -71,6 +71,10 @@
 
     .form_textarea{
         height: 8rem;
+        font-family: "mySecondFont";
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color:  #2C3238;
     }
 
     .right {
@@ -85,6 +89,10 @@
     button{
         margin-top: 5rem;
         border: none;
+    }
+
+    .form-label{
+        height: 3rem;
     }
 }
 
