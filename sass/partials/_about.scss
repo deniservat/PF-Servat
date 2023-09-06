@@ -91,6 +91,7 @@
     border: 2px solid #2C3238;
     border-radius: 10px;
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .about_accordion-button{
@@ -106,6 +107,25 @@
 
 .about_accordion-body{
     width: 100%;
+}
+
+.h2_about_card{
+    font-family: "myFirstFont-bold";
+    font-size: 8rem;
+    line-height: 8rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    -webkit-text-stroke: .01rem #2C3238;
+    text-shadow: -2px -2px 0 #2C3238,
+                2px -2px 0 #2C3238,
+                -2px 2px 0 #2C3238,
+                2px 2px 0 #2C3238;
+    color: #F0F0F0;
+}
+
+.lottie-arrow{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 .p_about_section1_card{
@@ -221,20 +241,6 @@
     text-align: center;
     padding-bottom: 3rem;
     color: #2C3238;
-}
-
-.h2_about_card{
-    font-family: "myFirstFont-bold";
-    font-size: 8rem;
-    line-height: 8rem;
-    letter-spacing: 1rem;
-    text-align: center;
-    -webkit-text-stroke: .01rem #2C3238;
-    text-shadow: -2px -2px 0 #2C3238,
-                2px -2px 0 #2C3238,
-                -2px 2px 0 #2C3238,
-                2px 2px 0 #2C3238;
-    color: #F0F0F0;
 }
 
 .h4_about{
