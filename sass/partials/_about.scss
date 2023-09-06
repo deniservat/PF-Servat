@@ -71,28 +71,76 @@
     }
 }
 
-/*-----------------------------*/
+/*----------ACCORDION-------------------*/
 
-.about_main_section_details{
-    padding-bottom: 3rem;
-}
-
-.about_main_card--default{
-    width: 400px;
-    height: 400px;
+.bg--yellow{
     background-color: #FFE500;
-    border-radius: 30px ;
-    padding-top: 5rem;
 }
 
-.about_main_card--hover{
-    width: 400px;
-    height: 400px;
-    border-radius: 30px ;
-    padding-top: 5rem;
-    @include bg-dark;
-    @include flex-column-left;
-    box-shadow: 4px 4px 4px 0px rgba(58, 58, 58, 0.10);
+.about_accordion{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about_accordion-item {
+    color:  #FFE500;
+    background-color:  #FFE500;
+    border: 2px solid #2C3238;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.about_accordion-button{
+    width: 100%;
+    padding-top: 2rem;
+    border: none;
+    @include flex-column-center;
+}
+
+.about_accordion-button:not(.collapsed) {
+    width: 100%;
+}
+
+.about_accordion-body{
+    width: 100%;
+}
+
+.p_about_section1_card{
+    font-family: "mySecondFont";
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #2C3238;
+    text-align: left;
+    padding-top: 2rem;
+    width: 100%;
+}
+
+.about_accordion {
+    --bs-accordion-color: transparent;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+    --bs-accordion-border-color: transparent;
+    --bs-accordion-border-width: ;
+    --bs-accordion-border-radius: ;
+    --bs-accordion-inner-border-radius: ;
+    --bs-accordion-btn-padding-x: ;
+    --bs-accordion-btn-padding-y: ;
+    --bs-accordion-btn-color: ;
+    --bs-accordion-btn-bg: ;
+    --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    --bs-accordion-btn-icon-width: 2rem;
+    --bs-accordion-btn-icon-transform: rotate(-180deg);
+    --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
+    --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23052c65'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e);
+    --bs-accordion-btn-focus-border-color: #FFE500;
+    --bs-accordion-btn-focus-box-shadow: ;
+    --bs-accordion-body-padding-x: 1.25rem;
+    --bs-accordion-body-padding-y: 1rem;
+    --bs-accordion-active-color: ;
+    --bs-accordion-active-bg: #FFE500;
 }
 
 /*-----------------------------*/
@@ -152,14 +200,6 @@
     line-height: 2.5rem;
 }
 
-.p_about_section1_card{
-    font-family: "mySecondFont";
-    font-size: 1.8rem;
-    line-height: 3.5rem;
-    width: 350px;
-    color: #F0F0F0;
-    text-align: center;
-}
 
 .h3_about{
     font-family: "myFirstFont-alt";
@@ -186,7 +226,7 @@
 .h2_about_card{
     font-family: "myFirstFont-bold";
     font-size: 8rem;
-    line-height: 10rem;
+    line-height: 8rem;
     letter-spacing: 1rem;
     text-align: center;
     -webkit-text-stroke: .01rem #2C3238;
@@ -254,7 +294,6 @@
     .p_about_section1_card{
         font-size: 1.6rem;
         line-height: 3rem;
-        width: 300px;
     }
 
     .about_main_section2_card{
@@ -310,7 +349,6 @@
     .p_about_section1_card{
         font-size: 1.6rem;
         line-height: 2.6rem;
-        width: 280px;
     }
 
     .about_main_section2_card{
@@ -324,6 +362,12 @@
         line-height: 4rem;
         letter-spacing: 0.5rem;
         padding-top: 2rem;
+    }
+
+    .h2_about_card{
+        font-size: 7rem;
+        line-height: 8rem;
+        letter-spacing: 0.5rem;
     }
     
     .p_about_section2{
@@ -371,6 +415,16 @@
         padding-bottom: 5rem;
     }
 
+    .h2_about_card{
+        font-size: 12rem;
+        line-height: 13rem;
+        letter-spacing: 1rem;
+    }
+
+    .about_accordion-item{
+        margin-bottom: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -404,6 +458,10 @@
     .about_main_section_img{
         display: none;
     }
+
+    .about_accordion-item{
+        margin-bottom: 2rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -426,9 +484,8 @@
     }
 
     .p_about_section1_card{
-        font-size: 1.4rem;
-        line-height: 2.2rem;
-        width: 240px;
+        font-size: 1.6rem;
+        line-height: 2.6rem;
     }
 
     .h5_about{
@@ -438,8 +495,8 @@
     }
 
     .h2_about_card{
-        font-size: 6rem;
-        line-height: 8rem;
+        font-size: 10rem;
+        line-height: 12rem;
         letter-spacing: 0.5rem;
     }
 

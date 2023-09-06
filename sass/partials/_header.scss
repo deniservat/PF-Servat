@@ -47,7 +47,7 @@ header{
         }
 
         .navbar-nav{
-            padding-top: 2rem;
+            padding-top: rem;
             width: $full-width;
 
             .nav-link{
@@ -116,23 +116,10 @@ header{
     }
 
     .navbar-nav{
-        height: 80vh;
+        height: 90vh;
+        padding-bottom: 15rem;
     }
-    .li--light{ 
-        padding-top: 2rem;
-    }
-    
-    .li--light--active{ 
-        padding-top: 2rem;
-    }
-    
-    .li--dark{ 
-        padding-top: 2rem;
-    }
-    
-    .li--dark--active{ 
-        padding-top: 2rem;
-    }
+   
 }
 
 @media screen and (min-width: 991px) {
