@@ -68,7 +68,6 @@
         .work_main_card_project_latest{
             @include flex-column-left;
             padding-bottom: 10rem;
-            
             white-space: pre-wrap;
         }
     }
@@ -169,5 +168,16 @@
 
     .work_main_card_project_latest{
         padding-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+
+    .work_main_card_project_latest{
+        padding-bottom: 2rem !important; 
+    }
+
+    .work_main_img_25{
+        padding-right: 0;
     }
 }

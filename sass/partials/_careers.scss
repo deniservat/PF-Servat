@@ -104,6 +104,16 @@
             padding-bottom: 2rem;
         }
 
+        .p_accordion-body{
+            font-family: "mySecondFont";
+            font-size: 1.6rem;
+            line-height: 3.5rem;
+            color: #f0f3f6;
+            text-align: left;
+            padding-bottom: 2rem;
+            width: 100%;
+        }
+
         .careers_accordion-button{
             border-radius: 12px;
             border: 1px solid #F3f6f0;
@@ -134,9 +144,6 @@
             margin-bottom: 2rem;
         }
 
-        .span_underline{
-            text-decoration: underline;
-        }
     }
 
     .careers_main_section3{

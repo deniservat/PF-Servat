@@ -535,11 +535,9 @@ a {
 
 .about_main_container {
   width: 90%;
-  overflow-x: hidden;
   padding-top: 5rem;
 }
 .about_main_container .about_main_section1 {
-  overflow-x: hidden;
   margin-bottom: 10rem;
 }
 .about_main_container .about_main_section2,
@@ -547,11 +545,9 @@ a {
 .about_main_container .about_main_section4,
 .about_main_container .about_main_section5,
 .about_main_container .about_main_section6 {
-  overflow-x: hidden;
   padding-top: 10rem;
 }
 .about_main_container .about_main_section6 {
-  overflow-x: hidden;
   padding-bottom: 20rem;
 }
 
@@ -1056,6 +1052,14 @@ a {
     padding-right: 2rem;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+  .work_main_card_project_latest {
+    padding-bottom: 2rem !important;
+  }
+  .work_main_img_25 {
+    padding-right: 0;
+  }
+}
 .bg--dark {
   background-color: #2C3238;
 }
@@ -1109,6 +1113,15 @@ a {
   padding-left: 2rem;
   padding-bottom: 2rem;
 }
+.careers_main_container .careers_main_section2 .p_accordion-body {
+  font-family: "mySecondFont";
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+  color: #f0f3f6;
+  text-align: left;
+  padding-bottom: 2rem;
+  width: 100%;
+}
 .careers_main_container .careers_main_section2 .careers_accordion-button {
   border-radius: 12px;
   border: 1px solid #F3f6f0;
@@ -1135,9 +1148,6 @@ a {
 }
 .careers_main_container .careers_main_section2 .collapsed, .careers_main_container .careers_main_section2 .open {
   margin-bottom: 2rem;
-}
-.careers_main_container .careers_main_section2 .span_underline {
-  text-decoration: underline;
 }
 .careers_main_container .careers_main_section3 {
   padding-top: 10rem;
@@ -1502,7 +1512,6 @@ p {
 * {
   padding: 0;
   margin: 0;
-  border: 1px solid red !important;
 }
 
 @font-face {

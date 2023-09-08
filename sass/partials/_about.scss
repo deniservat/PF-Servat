@@ -51,11 +51,9 @@
 
 .about_main_container{
     width: $w90;
-    overflow-x: hidden;
     padding-top: 5rem;
 
     .about_main_section1{
-        overflow-x: hidden;
         margin-bottom: 10rem;
     }
     
@@ -64,12 +62,10 @@
     .about_main_section4, 
     .about_main_section5,
     .about_main_section6{
-        overflow-x: hidden;
         padding-top: 10rem;
     }
     
     .about_main_section6{
-        overflow-x: hidden;
         padding-bottom: 20rem;
     }
 }
