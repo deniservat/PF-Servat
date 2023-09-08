@@ -51,10 +51,11 @@
 
 .about_main_container{
     width: $w90;
-    overflow: hidden;
+    overflow-x: hidden;
     padding-top: 5rem;
 
     .about_main_section1{
+        overflow-x: hidden;
         margin-bottom: 10rem;
     }
     
@@ -63,10 +64,12 @@
     .about_main_section4, 
     .about_main_section5,
     .about_main_section6{
+        overflow-x: hidden;
         padding-top: 10rem;
     }
     
     .about_main_section6{
+        overflow-x: hidden;
         padding-bottom: 20rem;
     }
 }
@@ -286,17 +289,6 @@
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
 
-    .about_main_card--default{
-        width: 350px;
-        height: 350px;
-    }
-    
-    .about_main_card--hover{
-        width: 350px;
-        height: 350px;
-        padding-top: 4rem;
-    }
-
     .p_about_section1_card{
         font-size: 1.6rem;
         line-height: 3rem;
@@ -322,34 +314,12 @@
 
     }
 
-@media only screen and (min-width: 1201px) {
-
-    .about_main_card--default{
-        position: absolute;
-        transition: 5s;
-    }
-
-    .about_main_card--default:hover{
-        display: none;
-}
-}
 
 @media only screen and (min-width:769px) and (max-width:1200px) {
 
     .about_main_frame_card{
         @include flex-row-center;
         margin-bottom: 5rem;
-    }
-
-    .about_main_card--default{
-        margin-right: 5rem;
-        width: 350px;
-        height: 350px;
-    }
-
-    .about_main_card--hover{
-        width: 350px;
-        height: 350px;
     }
 
     .p_about_section1_card{
@@ -400,10 +370,6 @@
     .about_main_section3_subheading{
         padding-left: 5rem;
     }
-}
-
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-    
 }
 
 @media only screen and (max-width: 990px) {
@@ -477,18 +443,6 @@
         margin-bottom: 5rem;
     }
 
-    .about_main_card--default{
-        width: 280px;
-        height: 280px;
-        margin-bottom: 5rem;
-        padding-top: 3rem;
-    }
-
-    .about_main_card--hover{
-        width: 280px;
-        height: 300px;
-    }
-
     .p_about_section1_card{
         font-size: 1.6rem;
         line-height: 2.6rem;
@@ -524,7 +478,7 @@
     }
 
     .about_yellowstroke{
-        width: 280px;
+        width: 80%;
     }
 
     .p_about_section3{
